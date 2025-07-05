@@ -1,7 +1,7 @@
-/* HEADER */
+@use "variables" as *; 
 
 .header-container {
-    background-color: #cfa991c4;
+    background-color: $header-color;
     display: flex;
     justify-content: center;
     align-content: center;
@@ -10,8 +10,8 @@
     min-width: 100%;
 
     .header-text {
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        color: #646464;
+        font-family: $secundary-font-family;
+        color: $primary-font-color;
         font-size: 1em;
         text-align: center;
         flex-grow: 1;

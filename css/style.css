@@ -1,18 +1,263 @@
-/* Error: Undefined variable.
- *    ,
- * 14 |   background-color: $primary-color;
- *    |                     ^^^^^^^^^^^^^^
- *    '
- *   scss\_generales.scss 14:21  @use
- *   scss\style.scss 1:1         root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Undefined variable.\a    \2577 \a 14 \2502    background-color: $primary-color;\d\a    \2502                      ^^^^^^^^^^^^^^\a    \2575 \a   scss\\_generales.scss 14:21  @use\a   scss\\style.scss 1:1         root stylesheet";
+@charset "UTF-8";
+* {
+  box-sizing: border-box;
 }
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: #645c57;
+  font-size: 12px;
+  background-color: #f9fff5;
+}
+
+.header-container {
+  background-color: rgba(207, 169, 145, 0.768627451);
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+  height: auto;
+  min-width: 100%;
+}
+.header-container .header-text {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #645c57;
+  font-size: 1em;
+  text-align: center;
+  flex-grow: 1;
+  margin: 2px;
+  padding: 8px;
+}
+
+/* MENÚ DE NAVEGACIÓN */
+.logo-image {
+  width: 76px;
+  height: 76px;
+}
+
+.navbar #navbarSupportedContent {
+  background-color: #f9fff5;
+}
+.navbar .navbar .navbar-toggler {
+  border: none;
+}
+.navbar .navbar-toggler:focus {
+  outline: none;
+  box-shadow: none;
+}
+.navbar .nav-item .nav-link {
+  color: #645c57;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 16px;
+  margin: 5px;
+  transition: 0.2s ease;
+}
+.navbar .nav-item :hover {
+  color: #edc3a3;
+  font-weight: bold;
+  transform: scale(1.1);
+}
+
+/* BANNER */
+.banner-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+  max-width: 100%;
+  max-height: auto;
+}
+
+.imagen-banner {
+  position: relative;
+  width: 100%;
+}
+
+/* TITULOS DE SECCIONES */
+.titulo-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 4px;
+  padding: 4px;
+  max-width: 100%;
+}
+
+h2 {
+  font-family: "Dancing Script", cursive;
+  font-size: 20px;
+  text-align: center;
+}
+
+/* GALERIA DESTACADOS */
+.gallery-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: space-evenly;
+  gap: 10px;
+  padding: 8px;
+  min-width: 100%;
+  margin-bottom: 20px;
+}
+
+.gallery-item {
+  width: 200px;
+  height: 200px;
+  border-radius: 4PX;
+  margin: 20px;
+}
+
+/* SECCION DE PRODUCTOS  */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  margin: 10px;
+  gap: 10px;
+}
+.grid-container .card {
+  background-color: transparent;
+  border: none;
+  text-align: center;
+}
+.grid-container .card-title {
+  text-align: center;
+  color: #645c57;
+  font-size: 18px;
+  font-family: "Dancing Script", cursive;
+}
+.grid-container .card-text {
+  color: #645c57;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 12px;
+}
+.grid-container input {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: #645c57;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 6px 12px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 4px;
+  box-shadow: 0px 0px 15px #e4cfc2;
+}
+
+/* SECCIONES COMO COMPRAR Y QUIENES SOMOS  */
+.main-text {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  padding: 20px;
+  min-width: 100%;
+  color: #645c57;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 12px;
+}
+
+/* SECCION CONTACTO */
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 60vh;
+  padding: 10px;
+  margin: 8px 0px;
+}
+.form .form-container {
+  flex: 1;
+}
+.form .form-input {
+  padding: 6px;
+  margin: 4px;
+}
+.form input,
+.form textarea {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: #645c57;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 6px 12px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 4px;
+  box-shadow: 0px 0px 15px #e4cfc2;
+}
+.form textarea {
+  min-width: 100%;
+  resize: vertical;
+  min-height: 100px;
+  max-height: 200px;
+}
+
+/* MEDIA QUERIS */
+@media (max-width: 480px) {
+  .titulo-main .header-text .derechos-autor {
+    font-size: 120%;
+  }
+}
+@media (max-width: 300px) {
+  .titulo-main .header-text .derechos-autor {
+    font-size: 150%;
+  }
+}
+/* FOOTER */
+footer {
+  display: flex;
+  margin-top: auto;
+  background-color: rgba(207, 169, 145, 0.768627451);
+  position: relative;
+  min-height: auto;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  padding: 6px;
+}
+footer .footer-container {
+  text-align: center;
+}
+footer h3 {
+  font-size: 12px;
+  color: #646464;
+  text-transform: uppercase;
+  text-align: center;
+}
+footer .footer-link {
+  padding: 4px;
+  width: 36px;
+  height: 36px;
+}
+footer .derechos-autor {
+  margin: 2px;
+  font-size: 10px;
+  color: #646464;
+}
+footer p {
+  font-family: inherit;
+  color: #645c57;
+  text-align: center;
+}
+
+/* MEDIA QUERIS */
+@media (max-width: 768px) {
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 480px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 300px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

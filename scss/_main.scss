@@ -1,3 +1,4 @@
+@use "variables" as *; 
 /* BANNER */
 
 .banner-container{
@@ -26,7 +27,7 @@
 }
 
 h2{
-  font-family: "Dancing Script", cursive; 
+  font-family: $external-font-family;
   font-size: 20px;
   text-align: center;
 
@@ -69,20 +70,20 @@ h2{
 
     .card-title {
         text-align: center;
-        color: #645c57;
+        color: $primary-font-color;
         font-size: 18px;
-        font-family: "Dancing Script", cursive;
+        font-family: $external-font-family;
     }
 
     .card-text {
-        color: #645c57;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: $primary-font-color;
+        font-family: $secundary-font-family;
         font-size: 12px;
     }
 
         input {
-        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-        color: #645c57;
+        font-family: $primary-font-family;
+        color: $primary-font-color;
         box-sizing: border-box;
         width: 100%;
         padding: 6px 12px;
@@ -102,8 +103,8 @@ h2{
   align-content: center;
   padding: 20px;
   min-width: 100%;
-  color: #645c57;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: $primary-font-color;
+  font-family: $secundary-font-family;
   font-size: 12px;
 }
 
@@ -129,8 +130,8 @@ h2{
 
     input,
     textarea {
-        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-        color: #645c57;
+        font-family: $primary-font-family;
+        color: $primary-font-color;
         box-sizing: border-box;
         width: 100%;
         padding: 6px 12px;
