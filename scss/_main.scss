@@ -1,0 +1,165 @@
+/* BANNER */
+
+.banner-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+  max-width: 100%;
+  max-height: auto;
+}
+
+.imagen-banner{
+  position:relative;
+  width: 100%;
+}
+
+/* TITULOS DE SECCIONES */
+
+.titulo-main{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 4px;
+  padding: 4px;
+  max-width: 100%;
+}
+
+h2{
+  font-family: "Dancing Script", cursive; 
+  font-size: 20px;
+  text-align: center;
+
+}
+
+/* GALERIA DESTACADOS */
+
+.gallery-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: space-evenly;
+  gap: 10px;
+  padding: 8px;
+  min-width: 100%;
+  margin-bottom: 20px;
+}
+
+.gallery-item{
+  width: 200px;
+  height: 200px;
+  border-radius: 4PX;
+  margin: 20px;
+}
+
+/* SECCION DE PRODUCTOS  */
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    margin: 10px;
+    gap: 10px;
+
+    .card {
+        background-color: transparent;
+        border: none;
+        text-align: center;
+    }
+
+    .card-title {
+        text-align: center;
+        color: #645c57;
+        font-size: 18px;
+        font-family: "Dancing Script", cursive;
+    }
+
+    .card-text {
+        color: #645c57;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 12px;
+    }
+
+        input {
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        color: #645c57;
+        box-sizing: border-box;
+        width: 100%;
+        padding: 6px 12px;
+        margin-top: 10px;
+        border: none;
+        border-radius: 4px;
+        box-shadow: 0px 0px 15px #e4cfc2;
+    }
+}
+
+
+/* SECCIONES COMO COMPRAR Y QUIENES SOMOS  */
+
+.main-text{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  padding: 20px;
+  min-width: 100%;
+  color: #645c57;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 12px;
+}
+
+/* SECCION CONTACTO */
+
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 60vh;
+    padding: 10px;
+    margin: 8px 0px;
+
+    .form-container {
+        flex: 1;
+    }
+
+    .form-input {
+        padding: 6px;
+        margin: 4px;
+    }
+
+    input,
+    textarea {
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        color: #645c57;
+        box-sizing: border-box;
+        width: 100%;
+        padding: 6px 12px;
+        margin-top: 10px;
+        border: none;
+        border-radius: 4px;
+        box-shadow: 0px 0px 15px #e4cfc2;
+    }
+
+    textarea {
+        min-width: 100%;
+        resize: vertical;
+        min-height: 100px;
+        max-height: 200px;
+    }
+}
+
+/* MEDIA QUERIS */
+
+@media (max-width: 480px) {
+
+  .titulo-main .header-text .derechos-autor {
+    font-size: 120%;
+  }
+}
+
+@media (max-width: 300px) {
+
+  .titulo-main .header-text .derechos-autor {
+    font-size: 150%;
+  }
+}

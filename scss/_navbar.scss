@@ -1,0 +1,36 @@
+/* MENÚ DE NAVEGACIÓN */
+
+.logo-image{
+  width: 76px;
+  height: 76px;
+}
+
+.navbar{
+    #navbarSupportedContent {
+        background-color: #f9fff5;
+    }
+
+    .navbar .navbar-toggler {
+        border: none;
+    }
+
+    .navbar-toggler:focus {
+        outline: none;
+        box-shadow: none;
+
+    }
+
+    .nav-item .nav-link {
+        color: #645c57;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-size: 16px;
+        margin: 5px;
+        transition: 0.2s ease;
+    }
+
+    .nav-item :hover {
+        color: #edc3a3;
+        font-weight: bold;
+        transform: scale(1.1);
+    }
+}
