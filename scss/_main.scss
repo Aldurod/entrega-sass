@@ -28,7 +28,7 @@
 
 h2{
   font-family: $external-font-family;
-  font-size: 20px;
+  font-size: 25px;
   text-align: center;
 
 }
@@ -101,11 +101,36 @@ h2{
   display: flex;
   justify-content: center;
   align-content: center;
+  text-align: center;
   padding: 20px;
   min-width: 100%;
   color: $primary-font-color;
   font-family: $secundary-font-family;
-  font-size: 12px;
+  font-size: 16px;
+}
+
+.main-map{
+  display: flex;
+  padding: 20px;
+  text-align: center;
+  justify-content: center;
+}
+
+#responsive-iframe-container {
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 56.25%; 
+  height: 0; 
+}
+.main-text-compra{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  padding: 20px;
+  min-width: 100%;
+  color: $primary-font-color;
+  font-family: $secundary-font-family;
+  font-size: 16px;
 }
 
 /* SECCION CONTACTO */
